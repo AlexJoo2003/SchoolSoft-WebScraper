@@ -240,9 +240,9 @@ def getNextEvent(schedule, out=False):
     return None
 
 def main():
-    # getRawData() #* Download the raw data from Schoolsoft using selenium and save it to rawdata.json
     saveData(convertRawData(getRawData()), True) #* Downloads the data from SchoolSoft, converts it to a json, and saves it to schedule.json
-    # saveData(convertRawData(), True) #* Saves the sorted schedule in schedule.json from raw data in rawdata.json
+    # getRawData() # Just downloads the raw data from Schoolsoft using selenium and save it to rawdata.json
+    # saveData(convertRawData(), True) #* Just saves the sorted schedule in schedule.json from raw data in rawdata.json
 
     # getCurrentEvent(getSavedData(), True)
     # getNextEvent(getSavedData(), True)
